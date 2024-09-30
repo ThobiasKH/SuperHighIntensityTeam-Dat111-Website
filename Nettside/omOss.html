@@ -1,73 +1,78 @@
 <!DOCTYPE html>
-<html lang="zxx">
-    <!-- zxx vil bli no senere når placeholder tekst lorem ipsum er fjernet -->
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Om Oss </title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/teamMedlem.css">
 </head>
 <body>
-    <header>
-        <h1 id="page_title"> Om Oss </h1>
-    </header>
-    <img id="kommuneImg" src="photos/kommune.png" onclick="window.location.href = 'https://sunnfjord.kommune.no/'" alt="Sunnfjord Kommune">
+    <div id="pageContents">
 
-    <nav id="navbar">
-        <button class="navigation_button" onclick="window.location.href='Home_page.html'">Hjem</button>
-        <button class="navigation_button" onclick="window.location.href='Nyheter.html'">Nyheter</button>
-        <button class="navigation_button" onclick="window.location.href='Visjon.html'">Visjon</button>
-        <button class="navigation_button" onclick="window.location.href='omOss.html'">Om Oss</button>
-        <button class="navigation_button" onclick="window.location.href='Kontaktside.html'">Kontakt Oss</button>
-    </nav>
-    <main>
-        <div id="team">
-            <div class="team-member">
-                <img src="photos/birk.png" alt="Team Member 1, Birk" title="Birk">
-                <h2>Birk</h2>
-                <p class="role">Rolle: Team Medlem</p>
-                <p class="description">Veldig kul.</p>
-            </div>
-            <div class="team-member">
-                <img src="photos/glenn.png" alt="Team Member 2, Glenn" title="Glenn">
-                <h2>Glenn</h2>
-                <p class="role">Rolle: Team Medlem</p>
-                <p class="description">Veldig kul.</p>
-            </div>
-            <div class="team-member">
-                <img src="photos/gunnar.png" alt="Team Member 3, Gunnar" title="Gunnar">
-                <h2>Gunnar</h2>
-                <p class="role">Rolle: Prosjekt Leder </p>
-                <p class="description"> Veldig kul. </p>
-            </div>
-            <div class="team-member">
-                <img src="photos/thobias.png" alt="Team Member 4, Thobias" title="Thobias">
-                <h2>Thobias</h2>
-                <p class="role">Rolle: Team Medlem</p>
-                <p class="description">Veldig kul.</p>
-            </div>
-            <div class="team-member">
-                <img src="photos/ådne.png" alt="Team Member 5, Ådne" title="Ådne">
-                <h2>Ådne</h2>
-                <p class="role">Rolle: Team medlem</p>
-                <p class="description">Veldig kul.</p>
-            </div>
-        </div>
+        <header>
+            <div id="logoAndHeading">
+                <img id="sunnfjordKommune" src="photos/kommuneSkjold.png" onclick="window.location.href = 'https://sunnfjord.kommune.no/'" alt="Sunnfjord Kommune">
 
-        <article id="extra-info" class="extra-info">
-            <h2> Kul innformasjon om vårt team! </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem animi aspernatur! Facilis dolores corrupti aut? Ad sequi nam qui ducimus, mollitia assumenda id minima! Aspernatur aperiam eligendi voluptate tempora.</p>
-            <p>Magni ullam illo voluptate nesciunt tempora necessitatibus, nostrum aliquid natus nobis in esse? Consequuntur doloremque voluptas unde, sapiente voluptatum tempora quidem, perspiciatis aperiam illo beatae quo optio dolorum, temporibus facilis!</p>
-            <p>Animi, ratione. Quo atque optio, hic velit laboriosam repellendus quae architecto ab reprehenderit iste dolore ullam ipsa! Sint reprehenderit inventore atque fugiat nihil suscipit quidem nisi temporibus tempore modi? Unde.</p>
-            <p>Quae cum officiis non maiores animi ullam quam perspiciatis quidem? Omnis voluptate exercitationem ea eius, officia error voluptatibus quibusdam obcaecati fuga fugiat perferendis nobis possimus, perspiciatis nostrum et repellat quaerat?</p>
-            <p>Hic blanditiis harum fuga asperiores sit culpa accusantium. Ut, officiis suscipit? Officiis nam voluptatum, praesentium sapiente iusto, aliquid ea sint molestiae quasi voluptate inventore sunt nulla facere reiciendis tenetur doloribus.</p>
-        
-        </article>
+                <h1> Vårt Team </h1>
+            </div>
+    
+            <nav>
+                <button class="navButton" onclick="window.location.href='Home_page.html'">Hjem</button>
+                <button class="navButton" onclick="window.location.href='Nyheter.html'">Nyheter</button>
+                <button class="navButton" onclick="window.location.href='Visjon.html'">Visjon</button>
+                <button class="navButton" onclick="window.location.href='omOss.html'">Om Oss</button>
+                <button class="navButton" onclick="window.location.href='Kontaktside.html'">Kontakt Oss</button>
+            </nav>
+        </header>
 
-        <button id="theme-toggle" class="theme-toggle">☀️</button>
+        <main>
+            <div id="team">
+                <div class="team-member">
+                    <img src="photos/birk.png" alt="Team Member 1, Birk" title="Birk">
+                    <h2>Birk</h2>
+                    <p class="role">Team Medlem</p>
+                    <!-- <p class="description">Veldig kul.</p> -->
+                </div>
+                <div class="team-member">
+                    <img src="photos/glenn.png" alt="Team Member 2, Glenn" title="Glenn">
+                    <h2>Glenn</h2>
+                    <p class="role">Team Medlem</p>
+                    <!-- <p class="description">Veldig kul.</p> -->
+                </div>
+                <div class="team-member">
+                    <img src="photos/gunnar.png" alt="Team Member 3, Gunnar" title="Gunnar">
+                    <h2>Gunnar</h2>
+                    <p class="role">Prosjekt Leder </p>
+                    <!-- <p class="description"> Veldig kul. </p> -->
+                </div>
+                <div class="team-member">
+                    <img src="photos/thobias.png" alt="Team Member 4, Thobias" title="Thobias">
+                    <h2>Thobias</h2>
+                    <p class="role">Team Medlem</p>
+                    <!-- <p class="description">Veldig kul.</p> -->
+                </div>
+                <div class="team-member">
+                    <img src="photos/ådne.png" alt="Team Member 5, Ådne" title="Ådne">
+                    <h2>Ådne</h2>
+                    <p class="role">Team medlem</p>
+                    <!-- <p class="description">Veldig kul.</p> -->
+                </div>
+            </div>
 
-    </main>
-    <footer></footer>
-    <script src="index.js"></script>
+            <section>
+                <h2> Kul innformasjon om vårt team! </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem animi aspernatur! Facilis dolores corrupti aut? Ad sequi nam qui ducimus, mollitia assumenda id minima! Aspernatur aperiam eligendi voluptate tempora.</p>
+                <p>Magni ullam illo voluptate nesciunt tempora necessitatibus, nostrum aliquid natus nobis in esse? Consequuntur doloremque voluptas unde, sapiente voluptatum tempora quidem, perspiciatis aperiam illo beatae quo optio dolorum, temporibus facilis!</p>
+                <p>Animi, ratione. Quo atque optio, hic velit laboriosam repellendus quae architecto ab reprehenderit iste dolore ullam ipsa! Sint reprehenderit inventore atque fugiat nihil suscipit quidem nisi temporibus tempore modi? Unde.</p>
+                <p>Quae cum officiis non maiores animi ullam quam perspiciatis quidem? Omnis voluptate exercitationem ea eius, officia error voluptatibus quibusdam obcaecati fuga fugiat perferendis nobis possimus, perspiciatis nostrum et repellat quaerat?</p>
+                <p>Hic blanditiis harum fuga asperiores sit culpa accusantium. Ut, officiis suscipit? Officiis nam voluptatum, praesentium sapiente iusto, aliquid ea sint molestiae quasi voluptate inventore sunt nulla facere reiciendis tenetur doloribus.</p>
+            
+            </section>
+
+        </main>
+        <footer> HVLtopia </footer>
+    </div>
 </body>
 </html>
