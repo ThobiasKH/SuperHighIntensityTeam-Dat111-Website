@@ -1,16 +1,16 @@
 function knapp1() {
-	window.location.assign("index.html");
+	window.location.assign("home_page.html");
 }
 function knapp2() {
 	window.location.assign("nyheter.html");
 }
 function knapp3() {
-        window.location.assign("visjon.html");
+        window.location.assign("Visjon.html");
 }
 function knapp4() {
-        window.location.assign("oss.html");
+        window.location.assign("omOss.html");
 }
 function knapp5() {
-        window.location.assign("kontakt.html");
+        window.location.assign("kontaktside.html");
 }
 
