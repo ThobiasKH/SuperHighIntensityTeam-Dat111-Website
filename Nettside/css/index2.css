@@ -1,5 +1,12 @@
-/* felles font */
-body {
+ /* Dette blir css filen vi bruker viss vi får beskjed av PC om at vi må ha kunn 1  */
+ /* felles font */
+:root {
+    --kommuneFarge: #005850;
+    --pageContentsBackgroundColor: #EDF1F0; 
+
+}
+
+ body {
   background-color: white;
   font-family: "Times New Roman", Times, serif;
 }
@@ -95,3 +102,38 @@ footer {
     height: 8vh;
     border-radius: 8px;
 }
+
+/* TEAM MEDLEM */
+
+#team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: center;
+    padding: 1vw;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    /* text-align: center; */
+    width: 15%;
+    font-size: 0.8vw;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 75%;
+    object-fit: cover;
+}
+.team-member h2 {
+    margin: 0.5vw 0;
+    font-size: 1.2vw;
+}
+
+.team-member .role {
+    font-weight: bold;
+}
+

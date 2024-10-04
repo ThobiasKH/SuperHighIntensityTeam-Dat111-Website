@@ -6,20 +6,21 @@
 			</head>
 		<body>
 			<h1>HVLtopia</h1>
-			<table>
-				<tr>
-				<th><img src="Sunnfjord1.png" title="Jeg kan ikke tro de lar oss gjøre dette!"></th>
-				<th rowspan="2" colspan="4"><img src="by.png" title="Hvltopia vil se sånn ut* INVESTER NÅ"></th>
-				</tr>
-				<tr>
-				<th><img src="HVL.png" alt="HVL"></th>
-				<tr>
-				<th><button name="btnClick" id="btnClick1" onclick="window.location.href='Home_page.html'">Hjem</button></th>
-				<th><button name="btnClick" id="btnClick2" onclick="window.location.href='nyheter.html'">Nyheter og oppdateringer</button></th>
-				<th><button name="btnClick" id="btnClick3" onclick="window.location.href='visjon.html'">Visjon, mål og hensikt</button></th>
-				<th><button name="btnClick" id="btnClick4" onclick="window.location.href='omoss.html'">Om oss</button></th>
-				<th><button name="btnClick" id="btnClick5" onclick="window.location.href='kontaktside.html'">Kontakt oss</button></th>
-			</table>
+			<header>
+            <div id="logoAndHeading">
+                <img id="sunnfjordKommune" src="photos/kommuneSkjold.png" onclick="window.location.href = 'https://sunnfjord.kommune.no/'" alt="Sunnfjord Kommune">
+
+                <h1> Oppskrift </h1>
+            </div>
+    
+            <nav>
+                <button class="navButton" onclick="window.location.href='home_page.html'">Hjem</button>
+                <button class="navButton" onclick="window.location.href='nyheter.html'">Nyheter</button>
+                <button class="navButton" onclick="window.location.href='Visjon.html'">Visjon</button>
+                <button class="navButton" onclick="window.location.href='omOss.html'">Om Oss</button>
+                <button class="navButton" onclick="window.location.href='kontaktside.html'">Kontakt Oss</button>
+            </nav>
+        </header>
 			<table>
 				<tr>
 				<th><img src="sunset.png" title="en mann som ikke tviler på at han gjorde et smart valg med å investere alle pengene sine i HVLtopia"></th>
