@@ -1,59 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
+<meta charset ="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontakt oss</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<title>HVLtopia: Kontakt</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="icon" href="photos/kommuneSkjold.png">
 </head>
 <body>
-	<section class="contact">
-		<div class="content">
-			<h2>Kontakt oss</h2>
-			<p>HVLTopia</p>
-		</div>
-		<div class="container">
-			<div class="contactinfo">
-				<div class="box">
-					<div class="icon"><i class="fa-solid fa-map"></i></div>
-					<div class="text"></div>
-						<h3>Adresse</h3>
-						<p>Svanehaugvegen 1,<br>Førde,Sunnfjord,<br>6802</p>
-					</div>
+	<div id="pageContents">
+		<header>
+        	<div id="logoAndHeading">
+            	<img id="sunnfjordKommune" src="photos/kommuneSkjold.png" onclick="window.location.href = 'https://sunnfjord.kommune.no/'" alt="Sunnfjord Kommune">
+            	<h1> Oppskrift </h1>
+        	</div>
+
+        	<nav>
+        	    <button class="navButton" onclick="window.location.href='home_page.html'">Hjem</button>
+        	    <button class="navButton" onclick="window.location.href='nyheter.html'">Nyheter</button>
+        	    <button class="navButton" onclick="window.location.href='Visjon.html'">Visjon</button>
+        	    <button class="navButton" onclick="window.location.href='omOss.html'">Om Oss</button>
+        	    <button class="navButton" onclick="window.location.href='kontaktside.html'">Kontakt Oss</button>
+        	</nav>
+    	</header>
+		<main>
+			<section class="splitContent">
+				<div class="splitContentLeft">
+					<h2>Kontakt oss</h2>
+
+					<!-- <p>HVLTopia</p> -->
+
+					<h3>Adresse: </h3>
+
+					<p>Svanehaugvegen 1,<br>Førde,Sunnfjord,<br>6802</p>
+					
+					<h3>Telefonnummer: </h3>
+					
+					<p> +47 40404040 </p>
+
+					<p>Åpningstider: 09:00-17:00</p>
+					
+					<h3>Email</h3>
+					
+					<p>HVLTopia@hvl.no</p>
 				</div>
-				<div class="box">
-					<div class="icon"><i class="fa-solid fa-phone"></i></div>
-					<div class="text"></div>
-						<h3>Telefonnummer</h3>
-						<p>1881</p>
-					</div>
-				</div>
-				<div class="box">
-					<div class="icon"><i class="fa-solid fa-envelope"></i></div>
-					<div class="text"></div>
-						<h3>Email</h3>
-						<p>HVLTopia@hvl.no</p>
-					</div>
-				<div class="contactForm">
+				<div class="splitContentRight">
 					<form>
-						<h2>Skriv Beskjed</h2>
-						<div class="inputBox">
-							<input type="text" name="null" required="required">
-							<span>Fult Namn</span>
-						</div>
-						<div class="inputBox">
-							<input type="text" name="null" required="required">
-							<span>Email</span>
-						</div>
-						<div class="inputBox">
-							<textarea required="required"></textarea>
-							<span>Skriv Beskjeden din...</span>
-						</div>
-						<div class="inputBox">
-							<input type="Submit" name="null" value="Send">
-						</div>
-						</form>
-						</div>
-						</section>
+						<h2> Skriv Beskjed </h2>
+
+						<!-- <span>Fult Namn</span> -->
+
+						<input type="text" name="null" required="required" placeholder="Fullt Namn"><br>
+						
+						<!-- <span>Email</span> -->
+						
+						<input type="text" name="null" required="required" placeholder="Email"><br>
+						
+						<!-- <span>Skriv Beskjeden din...</span> -->
+						
+						<textarea required="required" placeholder="Beskjed"></textarea><br>
+						
+						<button type="submit"> Send </button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer> HVLtopia </footer>
+	</div>
 </body>
 </html>

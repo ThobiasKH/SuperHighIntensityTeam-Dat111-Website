@@ -1,80 +1,68 @@
 <!doctype html>
 <html lang="no">
 <head>
-<style>
-table,th,td{
-	border:1px solid black;
-}
-aside {
-	width: 30%;
-	padding-right: 15px;
-	margin-right: 15px;
-	float: left;
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: lightgray;
-}
-article{
-	width: 66%;
-	padding-left: 15px;
-	margin-left: 15px;
-	float: right;
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: lightgray;
-}
-div.a{
-	width: 98%;
-	position: relative;
-	border: 5px solid black;
-	top: 70px;
-	padding: 5px;
-	float: left;
-}
-</style>
-<title>HVL topia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> HVLtopia </title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="icon" href="photos/kommuneSkjold.png">
+
+<!-- <style> -->
+<!-- </style> -->
 </head>
 <body>
-<img src = "https://www.studentpraksis.no/wp-content/uploads/2020/12/New-Project-29.jpg" alt="kommune_skjold_og_navn_paa_kommune" style="width:400px;height:200px">
-		<header>
-            <div id="logoAndHeading">
-                <img id="sunnfjordKommune" src="photos/kommuneSkjold.png" onclick="window.location.href = 'https://sunnfjord.kommune.no/'" alt="Sunnfjord Kommune">
+	<div id="pageContents">
 
-                <h1> Oppskrift </h1>
-            </div>
-    
-            <nav>
-                <button class="navButton" onclick="window.location.href='home_page.html'">Hjem</button>
-                <button class="navButton" onclick="window.location.href='nyheter.html'">Nyheter</button>
-                <button class="navButton" onclick="window.location.href='Visjon.html'">Visjon</button>
-                <button class="navButton" onclick="window.location.href='omOss.html'">Om Oss</button>
-                <button class="navButton" onclick="window.location.href='kontaktside.html'">Kontakt Oss</button>
-            </nav>
-        </header>
-<div>
-	<div>
-		<aside>
-		<h4><b>Siste oppdateringer</b></h4>
-		<ul>
-			<li> <i>første verson</i> </li>
-			<li><i> </i></li>
-			<li><i> </i></li>
-			<li><i> </i></li>
-		</ul>
-		</aside>
-		<article>
-			<h4><b>relevant info til prosjekt</b></h4>
-			<p> prosjekt prosjekt masse info prosjekt prosjekt veldig nyttig info</p>
-			<p> enda mer relavant info prosjekt prosjekt kansjke litt mer prosjekt</p>
-			<p> prosjekt prosjektelsen mc prosjekt</p>
-		</article>
-	</div>
-	<div class="a">
-		<footer> 
-		<p>tlf: xxx-xx-xxx</p>
-		<p>adresse: stedsnavn stedsen 69, 4200</p>
-		</footer>
-	</div>
+	<header>
+        <div id="logoAndHeading">
+            <img id="sunnfjordKommune" src="photos/kommuneSkjold.png" onclick="window.location.href = 'https://sunnfjord.kommune.no/'" alt="Sunnfjord Kommune">
+			<h1> HVLtopia </h1>
+        </div>
 
-	
+        <nav>
+            <button class="navButton" onclick="window.location.href='home_page.html'">Hjem</button>
+            <button class="navButton" onclick="window.location.href='nyheter.html'">Nyheter</button>
+            <button class="navButton" onclick="window.location.href='Visjon.html'">Visjon</button>
+            <button class="navButton" onclick="window.location.href='omOss.html'">Om oss</button>
+            <button class="navButton" onclick="window.location.href='kontaktside.html'">Kontakt oss</button>
+        </nav>
+    </header>
+
+	<main>
+
+		<section>
+			<h2>HVLtopia</h2>
+			<p>Velkommen til <b>HVLtopia</b>, et spennende prosjekt der vi utvikler fremtidens teknologiske løsninger for byen Førde.</p>
+			<p>Her kan du utforske hvordan vi kombinerer innovasjon og bærekraft for å skape en smartere og grønnere by.</p>
+			<p>På denne siden finner du oppdateringer om våre pågående prosjekter, detaljer om vårt arbeid, og hvordan du kan bidra. Ta også gjerne kontakt med oss for spørsmål eller samarbeid.</p>
+		</section>
+		
+
+		<section class="splitContent">
+			<div class="splitContentLeft">
+				<h3> Siste oppdateringer </h3>
+				<ul>
+					<li> Første verson av nettside </li>
+					<li> UKE-38 : sensorer til plante ferdig testet </li>
+					<li> UKE-40 : prototype buss ferdig </li>
+				</ul>
+			</div>
+			<div class="splitContentRight">
+				<h3> Dette jobber vi med nå </h3>
+				<ul>
+					<li> Bevegelsessensor aktiverte gatelys </li>
+					<li> Støynivåsensor </li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+<footer>
+	HVLtopia
+</footer>
+
 </div>
+
 </body>
+
 </html>

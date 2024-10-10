@@ -66,17 +66,20 @@
             <!-- en tabell eller liste kan være i section viss de har med temaet i seksjonen å gjøre -->
             <!-- for eksempel viss du har en produkt seksjon kan du ha en liste av produkt -->
             <!-- de kan ligge i en article når de for eksempel skal vise noe statistikk som har med artikkelen å gjøre -->
-
-            <table>
-                <tr>
-                    <th>Biler</th>
-                    <th> Båter</th>
-                </tr>
-                <tr>
-                    <td>bil nr 1</td>
-                    <td>båt nr 1</td>
-                </tr>
-            </table>
+            <article class="splitContent">
+            <div class="splitContentLeft">
+                    <table>
+                    <tr>
+                        <th>Biler</th>
+                        <th> Båter</th>
+                    </tr>
+                    <tr>
+                        <td>bil nr 1</td>
+                        <td>båt nr 1</td>
+                    </tr>
+                    </table>
+                </div>
+                <div class="splitContentRight" style="flex:2.5">
             <h2>Ting som smake ekkelt</h2>
             <ol>
                 <li> Kaffi </li>
@@ -87,6 +90,8 @@
                 <li> Kaffi </li>
                 <li> Espresso </li>
             </ul>
+                </div>
+            </article>
             
 
         </main>

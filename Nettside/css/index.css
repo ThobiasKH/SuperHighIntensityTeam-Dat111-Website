@@ -1,7 +1,16 @@
-/* felles font */
-body {
+ /* Dette blir css filen vi bruker viss vi får beskjed av PC om at vi må ha kunn 1  */
+ /* felles font */
+:root {
+    --kommuneFarge: #005850;
+    --pageContentsBackgroundColor: #EDF1F0; 
+
+}
+
+ body {
   background-color: white;
   font-family: "Times New Roman", Times, serif;
+  transform: 1;
+  transform-origin: center;
 }
 
 h1 {
@@ -42,7 +51,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-bottom: 2%;
 }
 
 nav {
@@ -53,6 +62,9 @@ nav {
 }
 
 article, section {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 1vh;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -95,3 +107,162 @@ footer {
     height: 8vh;
     border-radius: 8px;
 }
+
+.splitContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* gap: 0%; */
+}
+
+.splitContentLeft {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-right: 1px solid #d3d3d3;
+
+    /* text-align: left; */
+}
+
+.splitContentRight {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-left: 1px solid #d3d3d3; 
+
+    /* text-align: left; */
+}
+
+table {
+  width: 95%; 
+  border-collapse: collapse; 
+  margin: 2% 0; 
+  /* font-family: Arial, sans-serif;   */
+}
+
+th, td {
+  padding: 1.2% 1.5%; 
+  border: 1px solid #dddddd; 
+  text-align: left; 
+}
+
+th {
+  background-color: #f4f4f4; 
+  font-weight: bold; 
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; 
+}
+
+tr:hover {
+  background-color: #f1f1f1; 
+}
+
+@media (max-width: 600px) {
+  table {
+    display: block; 
+    overflow-x: auto; 
+  }
+}
+
+form {
+	width: 80%;
+	height: 80%;
+	background-color: #f4f4f4;
+	border-radius: 1vmin;
+	padding: 2vmin;
+	box-shadow: 0.1vmin 0.2vmin 0.5vmin #121212; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  	width: 80%;
+  	/* max-height: 50%; */
+	/* max-width: 100%; */
+  	padding: 0.1vmin;
+  	margin: 0.1vmin 0;
+  	border: 1px solid #ccc;
+  	border-radius: 0.2vmin;
+  	background-color: #fafafa;
+  	/* font-size: 16px; */
+	resize: none;
+  	/* transition: all 0.3s ease-in-out; */
+}
+
+textarea {
+	height: 60%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  	border-color: #007BFF; 
+  	box-shadow: 0 0 0.1vmin rgba(0, 123, 255, 0.3); 
+  	outline: none;
+  	background-color: #fff; 
+}
+
+label {
+  	font-weight: bold;
+  	margin-bottom: 5px;
+  	display: block;
+  	color: #333;
+}
+
+button[type="submit"] {
+  	background-color: white;
+	width: 40%;
+	height: 10%;
+  	color: black;
+	font-size: 150%;
+  	padding: 0.12vmin 0.2vmin;
+  	border-radius: 1vmin;
+  	cursor: pointer;
+  	transition: background-color 0.3s ease-in-out, transform 0.2s ease, color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  	background-color: var(--kommuneFarge);
+	color: white;
+  	transform: translateY(-0.1vmin);
+  	cursor: pointer;
+}
+
+button[type="submit"]:active {
+  	background-color: white;
+  	transform: translateY(0); 
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.2vw;
+}
+
+/* input[type="checkbox"] + label, */
+/* input[type="radio"] + label { */
+  /* font-weight: normal; */
+  /* color: #555; */
+/* } */
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(66, 66, 66);
+  font-style: italic;
+}
+
+/* .error-message { */
+  /* color: red; */
+  /* font-size: 14px; */
+  /* margin-top: -10px; */
+  /* margin-bottom: 10px; */
+/* } */

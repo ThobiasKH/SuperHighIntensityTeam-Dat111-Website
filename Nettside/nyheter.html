@@ -1,110 +1,118 @@
 <!DOCTYPE HTML>
-	<html lang="no">
-		<head>
-			<meta charset="UTF-8">
-			<title>HVLtopia</title>
-			<link rel="stylesheet" href="css/stylesheet.css">
-			<link rel="icon" type="image/x-icon" href="sunnfjord.png">
-			<!-- <script src="javascript.js"></script> -->
-		</head>
-		<body>
-			<div id="div00">
-				<div id="div01">
-					<header>
-						<div id="div0101">
-							<div id="div010101">
-								<img src="photos/kommuneSkjold.png" id="bilde01" class="bilde01" alt="Sunnfjord kommune">
-							</div>
-							<div id="div010102">
-								<h1>HVLtopia prosjekt, høsten 2024</h1>
-							</div>
-						</div>
-					</header>
-					<nav>
-						<div id="div0102" class="center">
-							<button name="btnClick" id="btnClick1" onclick="window.location.href='Home_page.html'" class="buttonLinks">Hjem</button>
-							<button name="btnClick" id="btnClick2" onclick="window.location.href='nyheter.html'" class="buttonLinks">Nyheter og oppdateringer</button>
-							<button name="btnClick" id="btnClick3" onclick="window.location.href='visjon.html'" class="buttonLinks">Visjon, mål og hensikt</button>
-							<button name="btnClick" id="btnClick4" onclick="window.location.href='omoss.html'" class="buttonLinks">Om oss</button>
-							<button name="btnClick" id="btnClick5" onclick="window.location.href='kontaktside'" class="buttonLinks">Kontakt oss</button>
-						</div>
-					</nav>
-				</div>
-		<!-- <header>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<title> HVLtopia: Nyheter </title>
+<!-- <link rel="stylesheet" href="css/index2.css"> -->
+
+</head>
+<link rel="stylesheet" href="css/index.css">
+<link rel="icon" type="image/x-icon" href="photos/kommuneSkjold.png">
+
+<style>
+    #progressBar {
+        background-color: #aaaaaa;
+        width: 43%;
+        height: 100%;
+        margin: 1%;
+        border-radius: 1vmin;
+        background-image: linear-gradient(135deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
+        animation: diagonalMove 1s linear infinite;
+        background-size: 30px 30px;
+        text-align: right;
+        transition: width 0.4s ease;
+    }
+
+    @keyframes diagonalMove {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 30px 30px;
+      }
+    }
+</style>
+<body>
+    <div id="pageContents">
+        <header>
+
             <div id="logoAndHeading">
-                <img id="sunnfjordKommune" src="photos/kommuneSkjold.png" onclick="window.location.href = 'https://sunnfjord.kommune.no/'" alt="Sunnfjord Kommune">
-
-                <h1> Oppskrift </h1>
+                <img src="photos/kommuneSkjold.png" id="sunnfjordKommune" class="bilde01" alt="Sunnfjord kommune">
+                <h1> Nyheter & Progresjon </h1>
             </div>
-    
+
             <nav>
-                <button class="navButton" onclick="window.location.href='home_page.html'">Hjem</button>
-                <button class="navButton" onclick="window.location.href='nyheter.html'">Nyheter</button>
-                <button class="navButton" onclick="window.location.href='Visjon.html'">Visjon</button>
-                <button class="navButton" onclick="window.location.href='omOss.html'">Om Oss</button>
-                <button class="navButton" onclick="window.location.href='kontaktside.html'">Kontakt Oss</button>
+                <button name="btnClick" id="btnClick1" onclick="window.location.href='home_page.html'" class="navButton">Hjem</button>
+                <button name="btnClick" id="btnClick2" onclick="window.location.href='nyheter.html'" class="navButton">Nyheter</button>
+                <button name="btnClick" id="btnClick3" onclick="window.location.href='Visjon.html'" class="navButton">Visjon</button>
+                <button name="btnClick" id="btnClick4" onclick="window.location.href='omOss.html'" class="navButton">Om oss</button>
+                <button name="btnClick" id="btnClick5" onclick="window.location.href='kontaktside.html'" class="navButton">Kontakt</button>
             </nav>
-        </header> -->
-				<main>
-					<div id="div02">
-						<div id="div0201">
-							<ul>
-								<li>Planlegging</li>
-								<li>Wireframing</li>
-								<li>Kode</li>
-							</ul>
-						</div>
-						<section>
-							<div id="div0202">
-								<h2 class="center sunnfjord">Nyheter og oppdateringer</h2>
-								<table id="table01">
 
-									<tr id="tr01">
-										<td>01/09-2024</td>
-										<td><b>Prosjektstart.</b></td>
-									</tr>
-									<tr id="tr02">
-										<td></td>
-										<td>Nå har prosjektet endelig startet opp.</td>
-									</tr>
+        </header>
 
-									<tr id="tr03">
-										<td>03/09-2024</td>
-										<td><b>Planlegging.</b></td>
-									</tr>
-									<tr id="tr04">
-										<td></td>
-										<td>Prosjektet er under planlegging.</td>
-									</tr>
-
-									<tr id="tr05">
-										<td>05/09-2024</td>
-										<td><b>Nyheter.</b></td>
-									</tr>
-									<tr id="tr06">
-										<td></td>
-										<td>Nå er hjemmesiden under konstruksjon, her vil det komme nyheter og oppdateringer fortløpende.</td>
-									</tr>
-
-									<tr id="tr07">
-										<td>16/09-2024</td>
-										<td><b>CSS.</b></td>
-									</tr>
-									<tr id="tr08">
-										<td></td>
-										<td>I dag hadde vi om CSS i DAT111.</td>
-									</tr>
-
-								</table>
-							</div>
-						</section>
-					</div>
-				</main>
-				<footer>
-					<div id="div03" class="center">
-						<h3 class="center">HVLtopia</h3>
-					</div>
-				</footer>
-			</div>
-		</body>
-	</html>
+        <main>
+            <section class="splitContent">
+                <div class="splitContentLeft">
+                    <ul>
+                        <li>Planlegging</li>
+                        <li>Wireframing</li>
+                        <li>Kode</li>
+                    </ul>
+                </div>
+                <div class="splitContentRight" style="flex:4">
+        
+                    <h2 class="center">Nyheter og oppdateringer</h2>
+                    <table id="table01">
+                        <tr id="tr01">
+                            <td>01/09-2024</td>
+                            <td><b>Prosjektstart.</b></td>
+                        </tr>
+                        <tr id="tr02">
+                            <td></td>
+                            <td>Nå har prosjektet endelig startet opp.</td>
+                        </tr>
+                
+                        <tr id="tr03">
+                            <td>03/09-2024</td>
+                            <td><b>Planlegging.</b></td>
+                        </tr>
+                        <tr id="tr04">
+                            <td></td>
+                            <td>Prosjektet er under planlegging.</td>
+                        </tr>
+                
+                        <tr id="tr05">
+                            <td>05/09-2024</td>
+                            <td><b>Nyheter.</b></td>
+                        </tr>
+                        <tr id="tr06">
+                            <td></td>
+                            <td>Nå er hjemmesiden under konstruksjon, her vil det komme nyheter og oppdateringer fortløpende.</td>
+                        </tr>
+                
+                        <tr id="tr07">
+                            <td>16/09-2024</td>
+                            <td><b>CSS.</b></td>
+                        </tr>
+                        <tr id="tr08">
+                            <td></td>
+                            <td>I dag hadde vi om CSS i DAT111.</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <h2> Progresjon estimat </h2>
+                <div id="progressBar">
+                    <p> 43% </p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            HVLtopia
+        </footer>
+    </div>
+</body>
+</html>
