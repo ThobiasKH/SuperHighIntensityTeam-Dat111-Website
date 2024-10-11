@@ -12,7 +12,7 @@
 }
 
 h1 {
-    color: var(--kommuneFarge);
+    color: var(--kommuneFarge, black);
     font-size: 3vw;
 }
 
@@ -32,7 +32,7 @@ selv om teksten er relativt stor
     margin: auto;
     padding: 1vw;
     border-radius: 10px;
-    background-color: var(--pageContentsBackgroundColor); 
+    background-color: var(--pageContentsBackgroundColor, black); 
 }
 
 #logoAndHeading {
@@ -84,8 +84,8 @@ article, section {
   height: 6.5vh;
   border-width: 1px;
   border-radius: 10px;
-  background-color: var(--kommuneFarge);
-  color: var(--pageContentsBackgroundColor);
+  background-color: var(--kommuneFarge, black);
+  color: var(--pageContentsBackgroundColor, white);
   text-align: center;
   display: inline-block;
   transition-duration: 0.4s;
@@ -100,7 +100,7 @@ article, section {
 footer {
     display: grid;
     align-items: center;
-    background-color: var(--kommuneFarge);
+    background-color: var(--kommuneFarge, black);
     color: white;
     height: 8vh;
     border-radius: 8px;
@@ -230,7 +230,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  	background-color: var(--kommuneFarge);
+  	background-color: var(--kommuneFarge, black);
 	color: white;
   	transform: translateY(-0.1vmin);
   	cursor: pointer;
