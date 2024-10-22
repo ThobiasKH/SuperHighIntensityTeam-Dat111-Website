@@ -11,7 +11,7 @@
     #progressBar {
         background-color: #aaaaaa;
         width: 43%;
-        height: 100%;
+        height: 2vh;
         margin: 1%;
         border-radius: 1vmin;
         background-image: linear-gradient(135deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
@@ -48,72 +48,113 @@
                 <button name="btnClick" id="btnClick2" onclick="window.location.href='nyheter.html'" class="navButton">Nyheter</button>
                 <button name="btnClick" id="btnClick3" onclick="window.location.href='Visjon.html'" class="navButton">Visjon</button>
                 <button name="btnClick" id="btnClick4" onclick="window.location.href='omOss.html'" class="navButton">Om oss</button>
-                <button name="btnClick" id="btnClick5" onclick="window.location.href='kontaktside.html'" class="navButton">Kontakt</button>
+                <button name="btnClick" id="btnClick5" onclick="window.location.href='kontaktside.html'" class="navButton">Kontakt oss</button>
             </nav>
 
         </header>
 
         <main>
-            <section class="splitContent">
-                <div class="splitContentLeft">
-                    <ul>
-                        <li>Planlegging</li>
-                        <li>Wireframing</li>
-                        <li>Kode</li>
-                    </ul>
-                </div>
-                <div class="splitContentRight" style="flex:4">
-        
-                    <h2 class="center">Nyheter og oppdateringer</h2>
-                    <table id="table01">
-                        <tr id="tr01">
-                            <td>01/09-2024</td>
-                            <td><b>Prosjektstart.</b></td>
-                        </tr>
-                        <tr id="tr02">
-                            <td></td>
-                            <td>Nå har prosjektet endelig startet opp.</td>
-                        </tr>
-                
-                        <tr id="tr03">
-                            <td>03/09-2024</td>
-                            <td><b>Planlegging.</b></td>
-                        </tr>
-                        <tr id="tr04">
-                            <td></td>
-                            <td>Prosjektet er under planlegging.</td>
-                        </tr>
-                
-                        <tr id="tr05">
-                            <td>05/09-2024</td>
-                            <td><b>Nyheter.</b></td>
-                        </tr>
-                        <tr id="tr06">
-                            <td></td>
-                            <td>Nå er hjemmesiden under konstruksjon, her vil det komme nyheter og oppdateringer fortløpende.</td>
-                        </tr>
-                
-                        <tr id="tr07">
-                            <td>16/09-2024</td>
-                            <td><b>CSS.</b></td>
-                        </tr>
-                        <tr id="tr08">
-                            <td></td>
-                            <td>I dag hadde vi om CSS i DAT111.</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
             <section>
-                <h2> Progresjon estimat </h2>
-                <div id="progressBar">
-                    <p> 43% </p>
+                <h2>Nyheter og oppdateringer</h2>
+                <table id="table01">
+                    <tr id="tr01">
+                        <td>01/09-2024</td>
+                        <td><b>Prosjektstart.</b></td>
+                    </tr>
+                    <tr id="tr02">
+                        <td></td>
+                        <td>Nå har prosjektet endelig startet opp.</td>
+                    </tr>
+                
+                    <tr id="tr03">
+                        <td>03/09-2024</td>
+                        <td><b>Planlegging.</b></td>
+                    </tr>
+                    <tr id="tr04">
+                        <td></td>
+                        <td>Prosjektet er under planlegging.</td>
+                    </tr>
+                
+                    <tr id="tr05">
+                        <td>05/09-2024</td>
+                        <td><b>Nyheter.</b></td>
+                    </tr>
+                    <tr id="tr06">
+                        <td></td>
+                        <td>Nå er hjemmesiden under konstruksjon, her vil det komme nyheter og oppdateringer fortløpende.</td>
+                    </tr>
+                
+                    <tr id="tr07">
+                        <td>16/09-2024</td>
+                        <td><b>CSS.</b></td>
+                    </tr>
+                    <tr id="tr08">
+                        <td></td>
+                        <td>I dag hadde vi om CSS i DAT111.</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="splitContent">
+                <div class="splitConentLeft" style="flex:2">
+                    <h2> Progresjon estimat </h2>
+                    <div id="progressBar">
+                        <p> 43% </p>
+                    </div>
+                </div>
+                <div class="splitContentRight">
+                    <form>
+                        <h3> Få med deg nyheter! </h3>
+                        <p> Meld deg på vårt nyhetsbrev her:</p>	
+
+						<input type="text" name="null" required="required" placeholder="Email"><br>	
+
+						<button type="submit" style="font-size: 70%; height: 15%"> Bekreft </button> 
+                    </form>
                 </div>
             </section>
+
+            <article id="modernisering-av-forde">
+                <h2>Modernisering av Førde: Et skritt inn i fremtiden</h2>
+                <p>Førde er i ferd med å gjennomgå en betydelig modernisering, og vi er glade for å dele de nyeste oppdateringene om dette spennende prosjektet. Byen vår har som mål å bli mer bærekraftig og tilpasset fremtidens behov.</p>
+                
+                <h3>Grønnere byrom</h3>
+                <p>Som en del av moderniseringsprosjektet jobber vi med å gjøre byrommene våre grønnere. Dette inkluderer planting av flere trær, oppgradering av parker og skapelse av nye grønne områder der innbyggerne kan slappe av og nyte naturen.</p>
+                
+                <h3>Smart transport</h3>
+                <p>Førde investerer i moderne transportsystemer for å redusere trafikkbelastning og forbedre tilgjengeligheten. Vi har startet arbeidet med å implementere smart teknologi i kollektivtransporten, inkludert sanntid informasjonskiosker og app-integrasjon for bedre reiseopplevelse.</p>
+            
+                <h3>Kulturelle initiativer</h3>
+                <p>Vi ønsker å styrke den kulturelle identiteten til Førde gjennom ulike initiativer. Det planlegges flere kunstprosjekter og kulturelle arrangementer for å involvere lokalsamfunnet og tiltrekke besøkende. Dette vil ikke bare berike byens kulturelle tilbud, men også skape et mer levende og attraktivt miljø.</p>
+            
+                <h3>Involvering av innbyggerne</h3>
+                <p>Involvering av innbyggerne i moderniseringsprosessen er avgjørende. Vi inviterer alle til å delta i åpne møter der de kan dele sine ideer og bekymringer. Sammen kan vi forme en by som møter behovene til alle innbyggere.</p>
+            
+                <p>Vi ser frem til å fortsette å jobbe sammen for å modernisere Førde og skape en bærekraftig, levende by for fremtidige generasjoner. Følg med på vår nettside for flere oppdateringer om prosjektet!</p>
+            </article>
+
+
+            <article id="plan-for-el-selvkjørende-buss">
+                <h2>Innovativt prosjekt: El-selvkjørende buss på vei til Førde</h2>
+                <p>Som en del av HVLtopia-prosjektet er vi begeistret for å kunngjøre planene våre for å introdusere en elektrisk selvkjørende buss i Førde. Dette banebrytende initiativet har som mål å forbedre kollektivtransporten i byen samtidig som vi reduserer klimagassutslippene.</p>
+                
+                <h3>Hva er en selvkjørende buss?</h3>
+                <p>Den selvkjørende bussen vil være utstyrt med avansert teknologi som lar den navigere på egenhånd ved hjelp av sensorer og kunstig intelligens. Passasjerene vil kunne nyte en behagelig reise uten sjåfør, og bussen vil tilpasse seg trafikksituasjonen i sanntid.</p>
+                
+                <h3>Bærekraftig transportløsning</h3>
+                <p>Den elektriske drivlinjen gjør bussen både energieffektiv og miljøvennlig. Med tanke på fremtidige generasjoner, er det viktig for oss å investere i transportløsninger som bidrar til å redusere avhengigheten av fossilt brensel.</p>
+                
+                <h3>Testfase og innbyggerinvolvering</h3>
+                <p>Før bussen settes i drift, vil vi gjennomføre en omfattende testfase for å sikre at teknologien fungerer optimalt og at sikkerheten ivaretas. Vi inviterer innbyggerne til å delta i informasjonsmøter der de kan lære mer om prosjektet og gi tilbakemeldinger.</p>
+                
+                <h3>Ser mot fremtiden</h3>
+                <p>Dette prosjektet er en del av vår langsiktige visjon for et smartere og mer bærekraftig Førde. Vi ser frem til å implementere den selvkjørende bussen i kollektivtransporten og håper at dette vil inspirere andre byer til å følge etter.</p>
+            
+                <p>Hold deg oppdatert på vår nettside for flere nyheter og oppdateringer om dette spennende prosjektet!</p>
+            </article>
         </main>
         
         <footer>
-            HVLtopia
+            <p>HVLtopia © 2024. Alle rettigheter forbeholdt. tlf: +47 40404040 </p>
         </footer>
     </div>
 </body>
