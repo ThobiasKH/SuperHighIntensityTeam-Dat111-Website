@@ -39,7 +39,9 @@
         <header>
 
             <div id="logoAndHeading">
-                <img src="photos/kommuneSkjold.png" id="sunnfjordKommune" class="bilde01" alt="Sunnfjord kommune">
+                <a href='https://sunnfjord.kommune.no/' id="sunnfjordKommune">
+                    <img id="sunnfjordKommuneImage" src="photos/kommuneSkjold.png" alt="Sunnfjord Kommune"> 
+                </a>
                 <h1> Nyheter & Progresjon </h1>
             </div>
 
@@ -59,70 +61,70 @@
                 <table id="table01">
                     <tr id="tr01">
                         <td>01/09-2024</td>
-                        <td><b>Prosjektstart.</b></td>
+                        <th><b>Prosjektstart.</b></th>
                     </tr>
                     <tr id="tr02">
-                        <td></td>
+                        <td aria-hidden="true"> &nbsp; </td>
                         <td>Nå har prosjektet endelig startet opp.</td>
                     </tr>
                 
                     <tr id="tr03">
                         <td>03/09-2024</td>
-                        <td><b>Planlegging.</b></td>
+                        <th><b>Planlegging.</b></th>
                     </tr>
                     <tr id="tr04">
-                        <td></td>
+                        <td aria-hidden="true"> &nbsp; </td>
                         <td>Prosjektet er under planlegging.</td>
                     </tr>
                 
                     <tr id="tr05">
                         <td>05/09-2024</td>
-                        <td><b>Nyheter.</b></td>
+                        <th><b>Nyheter.</b></th>
                     </tr>
                     <tr id="tr06">
-                        <td></td>
+                        <td aria-hidden="true"> &nbsp;</td>
                         <td>Nå er hjemmesiden under konstruksjon, her vil det komme nyheter og oppdateringer fortløpende.</td>
                     </tr>
                 
                     <tr id="tr07">
                         <td>16/09-2024</td>
-                        <td><b>CSS.</b></td>
+                        <th><b>CSS.</b></th>
                     </tr>
                     <tr id="tr08">
-                        <td></td>
+                        <td aria-hidden="true"> &nbsp;</td>
                         <td>I dag hadde vi om CSS i DAT111.</td>
                     </tr>
                     <tr id="tr09">
                         <td>19/09-2024</td>
-                        <td><b>Dat111 Innlevering 1.</b></td>
+                        <th><b>Dat111 Innlevering 1.</b></th>
                     </tr>
                     <tr id="tr10">
-                        <td></td>
+                        <td aria-hidden="true"> &nbsp;</td>
                         <td>Levert inn første dat111 innlevering </td>
                     </tr>
                     <tr id="tr11">
                         <td>10/10-2024</td>
-                        <td><b>Ing100 Innlevering 1/2.</b></td>
+                        <th><b>Ing100 Innlevering 1/2.</b></th>
                     </tr>
                     <tr id="tr12">
-                        <td></td>
+                        <td aria-hidden="true"> &nbsp;</td>
                         <td>Endelig versjon av Ing100 1 & 2 levert</td>
                     </tr>
  
                     <tr id="tr13">
                         <td>11/10-2024</td>
-                        <td><b>Dat111 Innlevering 2.</b></td>
+                        <th><b>Dat111 Innlevering 2.</b></th>
                     </tr>
                     <tr id="tr14">
-                        <td></td>
+                        <td aria-hidden="true"> &nbsp;</td>
                         <td>Levert inn andre dat111 innlevering </td>
                     </tr>
                     <tr id="tr15">
                         <td>25/10-2024</td>
-                        <td><b>Prototyper ferdig.</b></td>
+                        <th><b>Prototyper ferdig.</b></th>
                     </tr>
                     <tr id="tr16">
-                        <td></td>
+                        <td aria-hidden="true"> &nbsp;</td>
                         <td>Endelige versjoner av prototyper finalisert</td>
  
                 </table>
@@ -139,7 +141,8 @@
                         <h3> Få med deg nyheter! </h3>
                         <p> Meld deg på vårt nyhetsbrev her:</p>	
 
-						<input type="text" name="null" required="required" placeholder="Email"><br>	
+                        <label for="email"> Email: </label>
+						<input id="email" type="text" name="null" required="required" placeholder="Email"><br>	
 
 						<button type="submit" style="font-size: 70%; height: 15%"> Bekreft </button> 
                     </form>

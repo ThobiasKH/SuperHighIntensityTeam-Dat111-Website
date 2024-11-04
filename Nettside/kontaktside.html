@@ -11,7 +11,9 @@
 	<div id="pageContents">
 		<header>
         	<div id="logoAndHeading">
-            	<img id="sunnfjordKommune" src="photos/kommuneSkjold.png" onclick="window.location.href = 'https://sunnfjord.kommune.no/'" alt="Sunnfjord Kommune">
+                <a href='https://sunnfjord.kommune.no/' id="sunnfjordKommune">
+                    <img id="sunnfjordKommuneImage" src="photos/kommuneSkjold.png" alt="Sunnfjord Kommune"> 
+                </a>
             	<h1>  Kontakt Oss </h1>
         	</div>
 
@@ -48,18 +50,16 @@
 					<form>
 						<h2> Skriv Beskjed </h2>
 
-						<!-- <span>Fult Namn</span> -->
+                        <label for="fullName"> Fullt namn: </label>
+						<input id="fullName" type="text" name="nameI" required="required" placeholder="Fullt Namn"><br>
+						
+						
+                        <label for="email"> Email: </label>
+						<input id="email" type="text" name="email" required="required" placeholder="Email"><br>
 
-						<input type="text" name="nameI" required="required" placeholder="Fullt Namn"><br>
 						
-						<!-- <span>Email</span> -->
-						
-						<input type="text" name="email" required="required" placeholder="Email"><br>
-
-						
-						<!-- <span>Skriv Beskjeden din...</span> -->
-						
-						<textarea required="required" placeholder="Beskjed"></textarea><br>
+                        <label for="message"> Beskjed: </label>
+						<textarea id="message" required="required" placeholder="Beskjed"></textarea><br>
 						
 						<button type="submit"> Send </button>
 					</form>
